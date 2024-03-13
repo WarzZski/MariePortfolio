@@ -1,0 +1,176 @@
+/*Top-Left-Section*/
+.Header {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* If you want to make it follow while you scroll down the page
+    position: fixed; */
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #aeadad;
+    box-sizing: border-box;
+    background: rgba(180, 242, 178, 0.485);
+    margin-bottom: 40px;
+    z-index: 100; /*z-index means the position of the images if you want to put it in the back or front*/
+}
+.Left-Section {
+    display: flex;
+    align-items: center;
+}
+.Marsiepatootie-Text {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.Image1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    margin-left: 20px;
+    object-fit: cover;
+    position: relative;
+}
+.Image1 .Tip {
+    position: absolute;
+    width: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: gray;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+/*Top-Middle-Section*/
+.Middle-Section{
+    display: flex;
+    align-items: center;
+}
+.Middle-Section-Text{
+    text-align: center;
+    font-family: "Caveat", cursive;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+/*Top-Right-Section*/
+.Right-Section {
+    margin-right: 30px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Fb-Icon{
+    height: 40px;
+}
+.Insta-Icon{
+    height: 40px;
+}
+.Tiktok {
+    height: 40px;
+}
+
+/**/
+body {
+    background-image: url(Pictures/AcrylicPaint.jpg);
+    background-size: 300vw;
+    background-position: 0 0;
+    height: 400vh;
+    margin: 0;
+}
+/**/
+
+/*Text Styles Over here and second DIV*/
+.TEXTHERE{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: 250px;
+}
+.TitleMarie {
+    margin-left: 50px;
+ 
+}
+.Name1{
+    font-family: "Madimi One", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    font-style: bold;
+    padding-left: 15px;
+    margin: 0;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.Title1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
+    background-color: rgb(162, 239, 160);
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+    text-align: center;
+}
+.About{
+    text-transform: uppercase;
+	background: linear-gradient(to right, #196d6d 0%, #330867 100%);
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.MariePosition {
+    position: relative;
+}
+.Marie {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    bottom: 0px;
+    right: 80px;
+    top: 0px;
+    left: 100px;
+    z-index: 10;
+}
+.Tip {
+    display: block;
+    position: absolute;
+    font-family: "Caveat", cursive;
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    background-color: rgb(162, 239, 160);
+    padding: 10px;
+    bottom: 180px;
+    left: 165px;
+    border-radius: 20px;
+    z-index: 11;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.20s ease, visibility 0.20s ease;
+}
+.Marie:hover + .Tip {
+    opacity: 1;
+    visibility: visible;
+}
+.Marie2 {
+    display: inline-block;
+    width: 350px;
+    height: 260px;
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+    top: 0px;
+    left: 520px;
+}
