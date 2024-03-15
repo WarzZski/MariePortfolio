@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     /* If you want to make it follow while you scroll down the page */
-    position: fixed;
+    position: flex;
     top: 0;
     left: 0;
     right: 0;
